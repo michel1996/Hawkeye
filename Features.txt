@@ -1,0 +1,32 @@
+Features
+-Center camera on ball
+-Fix zoom
+-Feedback after clicking Simulate Trajectory
+-Button to hide UI
+-Parameters help section
+-Arrows for frame by frame
+-Home and End controls
+
+635 - outside court
+639 - singles box left
+641 - right service box left
+643 - left service box left
+655 - right doubles alley left
+657 - left doubles alley left
+
+645 - left service box right
+647 - singles box right
+649 - right service box right
+651 - left doubles alley right
+653 - right doubles alley right
+
+
+Advanced
+-Color trajectory path
+
+
+
+
+
+
+

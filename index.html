@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="module" src="main.js"></script>
+<script type="module" src="animationControls.js"></script>
+<script type="text/javascript" src="validation.js"></script>
+<div id="inResult" class="hawkeyeResult"><p>In</p></div>
+<div id="outResult" class="hawkeyeResult"><p>Out</p></div>
+<div id="main-container">
+    <div id="parametersWindow">
+        <p>Initial velocity (m/s):</p>
+        <input type="text" id="initialVelocity"/>
+        <p>Height of contact (m):</p>
+        <input type="text" id="initialPositionY"/>
+        <p>Distance from the net (m):</p>
+        <input type="text" id="initialPositionX" />
+        <p>Angle:</p>
+        <input type="text" id="angle"/>
+        <center><button disabled="disabled" role="button" id="trajectoryBtn">Simulate Trajectory</button></center>
+        <button id="lineBtn">Line</button>
+        <button id="outBtn">Out</button>
+    </div>
+    <div id="player">
+        <button id="startBtn" class="control-button"><i class="fas fa-fast-backward"></i></button>
+        <button id="backBtn" class="control-button"><i class="fas fa-step-backward"></i></button>
+        <button id="playBtn" class="control-button"><i class="fas fa-play"></i></button>
+        <!-- <button id="stopBtn" class="control-button"><i class="fas fa-stop"></i></button> -->
+        <button id="forwardBtn" class="control-button"><i class="fas fa-step-forward"></i></button>
+        <button id="endBtn" class="control-button"><i class="fas fa-fast-forward"></i></button>
+    </div>
+</div>
+<div id="challengeContainer">
+    <button id="challengeBtn">Challenge</button>
+    <input type="checkbox" id="serveChallenge">Serve Challenge</input>
+</div>
+<div id="controls">
+    <span>Controls:</span>
+    <p>Drag - Rotate <br>
+    Scroll up - Zoom in <br>
+    Scroll down - Zoom out <br>
+    Spacebar - Start/Pause <br>
+    Left Arrow - Step Back <br>
+    Right Arrow - Step Forward <br>
+    Home - First Frame <br>
+    End - Last Frame
+</div>
